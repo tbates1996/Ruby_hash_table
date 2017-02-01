@@ -104,11 +104,18 @@ class MyHash < HashTable
 
 end
 
-ht = MyHash.new(20)
- ht.read_data("DATAIN.txt")
+def main
+	$stdout = File.new("Sample.txt", "w")
+	ht = MyHash.new(20)
+	ht.read_data("DATAIN.txt")
+	ht.print_table
+	ht.write_data
+	ht.read_data("Output.txt")
+	ht.print_table
+	puts ""
+	ht.search_from_file
+	puts ""
+	ht.stats
+end
 
-ht.print_table
-ht.write_data
-ht.read_data("Output.txt")
-ht.print_table
-ht.search_from_file
+main

@@ -41,6 +41,7 @@ class LinkedList
 	end
 
 end
+
 #Elements of the linked list
 class Bucket
 		#Structure defining a slot which holds key value pairs 
