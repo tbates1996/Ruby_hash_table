@@ -22,7 +22,11 @@ class MyHash < HashTable
 	def search_from_file
 		search_keys = File.readlines("SEARCH.txt")
 		search_keys.each do |key|
-			puts search(key.chomp)
+			if search(key.chomp) == -1
+				print_search(key.chomp, "Record not found" , "")
+			else
+				print_search(key.chomp, "Data" , search(key.chomp))
+			end
 		end
 	end
 	#Write the data to the Output.txt file
@@ -87,6 +91,10 @@ class MyHash < HashTable
 	def print_report_header
 		printf("%29s \n %32s \n %35s \n", "Hash Table", "Verification Report", "Before|After Restoration")
 	end
+	
+	def print_search(key, value, location)
+		printf("%10s %10s %20s \n",key, location, value)
+	end
 
 end
 
@@ -97,3 +105,4 @@ ht.print_table
 ht.write_data
 ht.read_data("Output.txt")
 ht.print_table
+ht.search_from_file
