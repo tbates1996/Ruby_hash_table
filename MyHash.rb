@@ -20,12 +20,14 @@ class MyHash < HashTable
 	end
 	#Read in keys from file and find the locations of the values
 	def search_from_file
+		print_search_header
 		search_keys = File.readlines("SEARCH.txt")
 		search_keys.each do |key|
-			if search(key.chomp) == -1
+			result = search(key.chomp)
+			if result == -1
 				print_search(key.chomp, "Record not found" , "")
 			else
-				print_search(key.chomp, "Data" , search(key.chomp))
+				print_search(key.chomp, result[:data] , result[:location])
 			end
 		end
 	end
@@ -93,7 +95,11 @@ class MyHash < HashTable
 	end
 	
 	def print_search(key, value, location)
-		printf("%10s %10s %20s \n",key, location, value)
+		printf("%10s %20s %25s \n",key, location, value)
+	end
+
+	def print_search_header
+		printf("%10s %20s %25s \n","Search Key","Bucket:Overflow:Slot" , "Record")
 	end
 
 end
