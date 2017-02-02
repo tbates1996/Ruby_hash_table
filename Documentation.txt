@@ -1,0 +1,50 @@
+Class Diagram
+
+Struct Slot
+	(+)String key, value
+	(+)Slot next
+class LinkedList
+	(+) Slot head, tail, int count
+	initialize
+	purge
+	empty?
+	first
+	append(key,value)
+	each
+class HashTable
+	table[]
+	initialize(size)
+	<abstract> hash_function
+	insert(key,value)
+	search(key)
+	each
+class MyHash < HashTable
+	initialize(size)
+	read_data(filename)
+	search_for_file
+	write_data
+	hash_function(key)
+	stats
+	print_table
+	(-)print_report_header
+	(-)print_search_header
+	(-)print_search
+
+Class Associations
+
+LinkedList -------1:n(contains) ----- Slots
+HashTable -----1:n(contains) ------ LinkedList
+MyHash <------- 1:1(inherits) ------ HashTable
+
+Main Psuedocode
+
+1. Initialize MyHash of size 20
+2. Read data from datain.txt
+3. Print the table
+4. Write the data to output.txt
+5. Read the data back in from output.txt
+6. Print the table
+7. Search and print the search report
+8. Print the stats for the table
+end
+

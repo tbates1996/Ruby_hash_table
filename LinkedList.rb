@@ -1,10 +1,10 @@
 class LinkedList
 	#Shows the beginins and end node of the linked list
 	attr_accessor :head,:tail, :count
+	#Structure to define a slot data type
 	Slot = Struct.new(:key, :value,:next)
 
 	#Initialize an empty Linked list
-
 	def initialize
 		@head = nil
 		@tail = nil
