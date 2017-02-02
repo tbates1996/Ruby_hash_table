@@ -48,7 +48,7 @@ class MyHash < HashTable
 	end
 	#calculates total and average collisions on the table
 	def stats
-		#2.29 ave
+		#Should work out to 2.29 for this assignment
 		total = 0
 		buckets = 0
 		@table.each do |bucket|
@@ -82,15 +82,15 @@ class MyHash < HashTable
 	end
 
 	private
-
+	#Prints the header for the report of the hash table
 	def print_report_header
 		printf("%29s \n %32s \n %35s \n", "Hash Table", "Verification Report", "Before|After Restoration")
 	end
-	
+	#Prints the variables of a search in the report format
 	def print_search(key, value, location)
 		printf("%10s %15s %25s\n",key, location, value)
 	end
-
+	#Prints the header of the search report
 	def print_search_header
 		printf("%10s %15s %25s\n","Search Key","Bucket/Slot" , "Record")
 		50.times{print "="}
@@ -112,5 +112,4 @@ def main
 	puts ""
 	ht.stats
 end
-
-main
+main()
