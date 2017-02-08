@@ -3,7 +3,6 @@ class LinkedList
 	attr_accessor :head,:tail, :count
 	#Structure to define a slot data type
 	Slot = Struct.new(:key, :value,:next)
-
 	#Initialize an empty Linked list
 	def initialize
 		@head = nil
@@ -36,7 +35,6 @@ class LinkedList
 			@tail = tmp
 			@count += 1
 		end
-		
 	end
 	# Iterate through the current list and preform actions on the data in a code block
 	def each
@@ -46,5 +44,4 @@ class LinkedList
 			current = current[:next]
 		end
 	end
-
 end

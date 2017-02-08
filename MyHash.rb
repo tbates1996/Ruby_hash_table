@@ -61,8 +61,7 @@ class MyHash < HashTable
 		end
 			total = total - buckets
 			puts "Total collisions: #{total}"
-			puts "Average collisions: #{total.to_f/buckets}"
-			puts buckets
+			puts "Average collisions: #{(total.to_f/buckets).round(2)}"
 	end
 	#Prints a report of the table and outputs it to the console
 	def print_table
@@ -100,7 +99,7 @@ class MyHash < HashTable
 end
 
 def main
-	$stdout = File.new("Sample.txt", "w")
+	$stdout = File.new("Report.txt", "w")
 	ht = MyHash.new(20)
 	ht.read_data("DATAIN.txt")
 	ht.print_table
@@ -110,6 +109,8 @@ def main
 	puts ""
 	ht.search_from_file
 	puts ""
+	puts "Stats\n======================="
 	ht.stats
 end
-main()
+
+main

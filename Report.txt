@@ -182,6 +182,7 @@ IBM CORPOR            18/2      BOCA RATON,  FLORIDA
 OHCHID COR                          Record not found
 FUN  SOFTW                          Record not found
 
+Stats
+=======================
 Total collisions: 39
-Average collisions: 2.2941176470588234
-17
+Average collisions: 2.29
