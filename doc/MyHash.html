@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class MyHash - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link"><a href="HashTable.html">HashTable</a>
+  
+</div>
+
+    
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li class="calls-super" ><a href="#method-c-new">::new</a>
+    
+    <li ><a href="#method-i-hash_function">#hash_function</a>
+    
+    <li ><a href="#method-i-print_table">#print_table</a>
+    
+    <li ><a href="#method-i-read_data">#read_data</a>
+    
+    <li ><a href="#method-i-search_from_file">#search_from_file</a>
+    
+    <li ><a href="#method-i-stats">#stats</a>
+    
+    <li ><a href="#method-i-write_data">#write_data</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-MyHash">
+  <h1 id="class-MyHash" class="class">
+    class MyHash
+  </h1>
+
+  <section class="description">
+    
+  </section>
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Class Methods</h3>
+       </header>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(size)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Instance a hash table with size passed to initialize</p>
+          
+          
+            <div class="method-calls-super">
+              Calls superclass method
+              <a href="HashTable.html#method-c-new">HashTable.new</a>
+            </div>
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File MyHash.rb, line 5</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span> <span class="ruby-identifier">size</span>
+        <span class="ruby-keyword">super</span> <span class="ruby-identifier">size</span> <span class="ruby-comment">#me</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-hash_function" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">hash_function</span><span
+            class="method-args">(key)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Defines the hash function used to put the data into the table</p>
+          
+          
+
+          
+          <div class="method-source-code" id="hash_function-source">
+            <pre><span class="ruby-comment"># File MyHash.rb, line 46</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">hash_function</span> <span class="ruby-identifier">key</span>
+        <span class="ruby-keyword">return</span> (<span class="ruby-identifier">key</span>[<span class="ruby-value">1</span>].<span class="ruby-identifier">ord</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">key</span>[<span class="ruby-value">3</span>].<span class="ruby-identifier">ord</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">key</span>[<span class="ruby-value">5</span>].<span class="ruby-identifier">ord</span>)<span class="ruby-operator">%</span><span class="ruby-value">20</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-print_table" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">print_table</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Prints a report of the table and outputs it to the console</p>
+          
+          
+
+          
+          <div class="method-source-code" id="print_table-source">
+            <pre><span class="ruby-comment"># File MyHash.rb, line 67</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">print_table</span>
+        <span class="ruby-identifier">print_report_header</span>
+        <span class="ruby-identifier">i</span> = <span class="ruby-value">1</span>
+        <span class="ruby-ivar">@table</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">bucket</span><span class="ruby-operator">|</span>
+                <span class="ruby-keyword">unless</span> <span class="ruby-identifier">bucket</span> <span class="ruby-operator">==</span> <span class="ruby-keyword">nil</span>
+                                <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Bucket #{i}:&quot;</span>
+                                <span class="ruby-identifier">j</span> = <span class="ruby-value">1</span>
+                        <span class="ruby-identifier">bucket</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">slot</span><span class="ruby-operator">|</span>                       
+                                <span class="ruby-identifier">printf</span> <span class="ruby-string">&quot;%45s \n&quot;</span>, <span class="ruby-node">&quot;Slot #{j}: #{slot[:key]} #{slot[:value]}&quot;</span>
+                                <span class="ruby-identifier">j</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+                        <span class="ruby-keyword">end</span>
+                <span class="ruby-keyword">end</span>
+                <span class="ruby-identifier">i</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+        <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-read_data" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">read_data</span><span
+            class="method-args">(filename)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Read in the data from filename of choice</p>
+          
+          
+
+          
+          <div class="method-source-code" id="read_data-source">
+            <pre><span class="ruby-comment"># File MyHash.rb, line 10</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">read_data</span> <span class="ruby-identifier">filename</span>
+        <span class="ruby-identifier">data</span> = <span class="ruby-constant">File</span>.<span class="ruby-identifier">readlines</span>(<span class="ruby-identifier">filename</span>)
+        <span class="ruby-identifier">data</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">line</span><span class="ruby-operator">|</span>
+                <span class="ruby-identifier">string</span> = <span class="ruby-identifier">line</span>.<span class="ruby-identifier">chomp</span>
+                <span class="ruby-identifier">str10</span> = <span class="ruby-identifier">string</span>[<span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-value">9</span>]
+                <span class="ruby-identifier">str20</span> = <span class="ruby-identifier">string</span>[<span class="ruby-value">10</span><span class="ruby-operator">..</span><span class="ruby-value">-1</span>]
+                <span class="ruby-identifier">insert</span>(<span class="ruby-identifier">str10</span>,<span class="ruby-identifier">str20</span>)
+
+        <span class="ruby-keyword">end</span>
+
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-search_from_file" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">search_from_file</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Read in keys from file and find the locations of the values</p>
+          
+          
+
+          
+          <div class="method-source-code" id="search_from_file-source">
+            <pre><span class="ruby-comment"># File MyHash.rb, line 22</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">search_from_file</span>
+        <span class="ruby-identifier">print_search_header</span>
+        <span class="ruby-identifier">search_keys</span> = <span class="ruby-constant">File</span>.<span class="ruby-identifier">readlines</span>(<span class="ruby-string">&quot;SEARCH.txt&quot;</span>)
+        <span class="ruby-identifier">search_keys</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">key</span><span class="ruby-operator">|</span>
+                <span class="ruby-identifier">result</span> = <span class="ruby-identifier">search</span>(<span class="ruby-identifier">key</span>.<span class="ruby-identifier">chomp</span>)
+                <span class="ruby-keyword">if</span> <span class="ruby-identifier">result</span> <span class="ruby-operator">==</span> <span class="ruby-value">-1</span>
+                        <span class="ruby-identifier">print_search</span>(<span class="ruby-identifier">key</span>.<span class="ruby-identifier">chomp</span>, <span class="ruby-string">&quot;Record not found&quot;</span> , <span class="ruby-string">&quot;&quot;</span>)
+                <span class="ruby-keyword">else</span>
+                        <span class="ruby-identifier">print_search</span>(<span class="ruby-identifier">key</span>.<span class="ruby-identifier">chomp</span>, <span class="ruby-identifier">result</span>[<span class="ruby-value">:data</span>] , <span class="ruby-identifier">result</span>[<span class="ruby-value">:location</span>])
+                <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-stats" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">stats</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>calculates total and average collisions on the table</p>
+          
+          
+
+          
+          <div class="method-source-code" id="stats-source">
+            <pre><span class="ruby-comment"># File MyHash.rb, line 50</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">stats</span>
+        <span class="ruby-comment">#Should work out to 2.29 for this assignment</span>
+        <span class="ruby-identifier">total</span> = <span class="ruby-value">0</span>
+        <span class="ruby-identifier">buckets</span> = <span class="ruby-value">0</span>
+        <span class="ruby-ivar">@table</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">bucket</span><span class="ruby-operator">|</span>
+                <span class="ruby-keyword">if</span> <span class="ruby-identifier">bucket</span> <span class="ruby-operator">!=</span> <span class="ruby-keyword">nil</span> 
+                        <span class="ruby-keyword">if</span> <span class="ruby-identifier">bucket</span>.<span class="ruby-identifier">count</span> <span class="ruby-operator">!=</span> <span class="ruby-value">1</span>
+                                <span class="ruby-identifier">buckets</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>               
+                                <span class="ruby-identifier">total</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">bucket</span>.<span class="ruby-identifier">count</span> 
+                        <span class="ruby-keyword">end</span>
+                <span class="ruby-keyword">end</span>  
+        <span class="ruby-keyword">end</span>
+                <span class="ruby-identifier">total</span> = <span class="ruby-identifier">total</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">buckets</span>
+                <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Total collisions: #{total}&quot;</span>
+                <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Average collisions: #{(total.to_f/buckets).round(2)}&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-write_data" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">write_data</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Write the data to the <a href="Output_txt.html">Output.txt</a> file</p>
+          
+          
+
+          
+          <div class="method-source-code" id="write_data-source">
+            <pre><span class="ruby-comment"># File MyHash.rb, line 35</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">write_data</span>
+        <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-string">&quot;Output.txt&quot;</span>,<span class="ruby-string">&quot;w&quot;</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">file</span><span class="ruby-operator">|</span>
+                <span class="ruby-keyword">self</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">bucket</span><span class="ruby-operator">|</span>
+                        <span class="ruby-identifier">bucket</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">slot</span><span class="ruby-operator">|</span>
+                                <span class="ruby-identifier">file</span>.<span class="ruby-identifier">write</span>(<span class="ruby-identifier">slot</span>[<span class="ruby-value">:key</span>] <span class="ruby-operator">+</span> <span class="ruby-identifier">slot</span>[<span class="ruby-value">:value</span>] <span class="ruby-operator">+</span> <span class="ruby-string">&quot;\n&quot;</span>)
+                        <span class="ruby-keyword">end</span>
+                <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">end</span>
+        <span class="ruby-ivar">@table</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">20</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.2.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+
