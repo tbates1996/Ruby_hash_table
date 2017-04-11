@@ -59,13 +59,18 @@ class MyHash < HashTable
 				end
 			end	
 		end
-			total = total - buckets
-			puts "Total collisions: #{total}"
-			puts "Average collisions: #{(total.to_f/buckets).round(2)}"
+		total = total - buckets
+		puts "Total collisions: #{total}"
+		puts "Average collisions: #{(total.to_f/buckets).round(2)}"
+		puts "Collision length per bucket:"
+		@table.each_with_index do |bucket, index|
+			puts "  Bucket #{index+1}: #{bucket.count - 1}" unless bucket.nil?
+		end
+
 	end
 	#Prints a report of the table and outputs it to the console
-	def print_table
-		print_report_header
+	def print_table(state)
+		print_report_header(state)
 		i = 1
 		@table.each do |bucket|
 			unless bucket == nil
@@ -75,6 +80,7 @@ class MyHash < HashTable
 					printf "%45s \n", "Slot #{j}: #{slot[:key]} #{slot[:value]}"
 					j += 1
 				end
+				puts "      Count: #{bucket.count}"
 			end
 			i += 1
 		end
@@ -82,8 +88,8 @@ class MyHash < HashTable
 
 	private
 	#Prints the header for the report of the hash table
-	def print_report_header
-		printf("%29s \n %32s \n %35s \n", "Hash Table", "Verification Report", "Before|After Restoration")
+	def print_report_header(state)
+		printf("%29s \n %32s \n %32s \n", "Hash Table", "Verification Report", "#{state} Restoration")
 	end
 	#Prints the variables of a search in the report format
 	def print_search(key, value, location)
@@ -102,10 +108,10 @@ def main
 	$stdout = File.new("Report.txt", "w")
 	ht = MyHash.new(20)
 	ht.read_data("DATAIN.txt")
-	ht.print_table
+	ht.print_table("Before")
 	ht.write_data
 	ht.read_data("Output.txt")
-	ht.print_table
+	ht.print_table("After")
 	puts ""
 	ht.search_from_file
 	puts ""

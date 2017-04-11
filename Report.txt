@@ -1,17 +1,20 @@
                    Hash Table 
               Verification Report 
-            Before|After Restoration 
+               Before Restoration 
 Bucket 1:
       Slot 1: GENOA SYST TRIMBLE SAN JOSE, CA 
+      Count: 1
 Bucket 2:
       Slot 1: TATUNG CO. EL PR. LONG BEACH CA 
       Slot 2: CORE INTER FEDERA BOCA RATON FL 
       Slot 3: CURITS INC UNIO PETERBOROUGH NH 
+      Count: 3
 Bucket 3:
       Slot 1: SIGMA DESI UNIVER A SAN JOSE CA 
       Slot 2: TAXAN CORP CITY OF INDUSTRY, CA 
       Slot 3: ORCHID COR WESTINGHO FREMONT CA 
       Slot 4: MICROWAY C TEMPOHOUSE LONDON UK 
+      Count: 4
 Bucket 4:
       Slot 1: MICRODESIG UNVIE WINTER PARK FL 
       Slot 2: PARADISE S TAYLOR S BRISBANE CA 
@@ -19,79 +22,98 @@ Bucket 4:
       Slot 4: TALLTREE S SNTONIO PALO ALTO CA 
       Slot 5: PROMETHEUS FREMONT S FREMONT CA 
       Slot 6: FUNK SOFTW 3RD ST CAMBRIDGE, MA 
+      Count: 6
 Bucket 5:
       Slot 1: AST RESEAR ALTON AV IRVINE   CA 
       Slot 2: DAC SW INC SPRING VAL DALLAS TX 
       Slot 3: COMPUADD C TECH BLVD. AUSTIN TX 
+      Count: 3
 Bucket 6:
       Slot 1: MAYNARD EL SEMOR CASSELBERRY FL 
+      Count: 1
 Bucket 7:
       Slot 1: SUMMIT TEC BABSON WELLESLEY, MA 
       Slot 2: MICROGRAFX GREEN RICHARDSON, TX 
       Slot 3: BUSSIN TOL 128 AVE BELLEVUE, WA 
       Slot 4: DYSAN CORP PAT H SANTA CLARA CA 
+      Count: 4
 Bucket 8:
       Slot 1: ROSESOFT C UNIVE WAY SEATTLE WA 
       Slot 2: OKIDATA CO A MOUNTAIN LAUREL NJ 
+      Count: 2
 Bucket 9:
       Slot 1: TECMAR INT COCHRAN RD. SOLON OH 
       Slot 2: QUANTUM SW STAFFO OTTAWA CANADA 
+      Count: 2
 Bucket 10:
       Slot 1: PRINCETON. EWING S PRINCETON NJ 
       Slot 2: HEWLETT PA BERNARD SAN DIEGO CA 
       Slot 3: SPECTRUM S WOLFE R SUNNYVALE CA 
+      Count: 3
 Bucket 11:
       Slot 1: MAXELL CO. OXFORD  MOONACHIE NJ 
       Slot 2: SOURCE TEL POBOX 1305 MCLEAN VA 
       Slot 3: QUBIE CORP CALLE S CAMARILLO CA 
+      Count: 3
 Bucket 12:
       Slot 1: KAMERMAN L CIRRUS BEAVERTON, OR 
       Slot 2: EPSON AMER BEDA STR TORRANCE CA 
       Slot 3: DIGITAL RE GARDEN C MONTEREY CA 
+      Count: 3
 Bucket 13:
       Slot 1: HERCULES C NINTH ST BERKELEY CA 
       Slot 2: MICROMART. CAMPUS D NORCROSS GE 
       Slot 3: BORTHER I. THENALA DR IRVINE CA 
+      Count: 3
 Bucket 14:
       Slot 1: EXPRESS SY REMING SCHAUMBURG IL 
       Slot 2: IOMEGA COR WESTA SOUTH ROY UTAH 
       Slot 3: BORLAND I. SCOTTS V. DR S.V. CA 
+      Count: 3
 Bucket 16:
       Slot 1: GRAPHIC CO 5TH AVE. WALTHAM, MA 
       Slot 2: MICROPRO I BOX 57135 HAYWARD CA 
       Slot 3: PROSOFT CO BELLAI HOLLEYWOOD CA 
       Slot 4: HONEYWELL. BAKER COSTA MESA, CA 
+      Count: 4
 Bucket 17:
       Slot 1: SSISOFTWAR CENTER ST. OREM UTAH 
       Slot 2: EVEREX SYS MILMONT FREMONT,  CA 
+      Count: 2
 Bucket 18:
       Slot 1: LOGIQUEST. MONTRE QUEBEC CANADA 
       Slot 2: IBM CORPOR BOCA RATON,  FLORIDA 
+      Count: 2
 Bucket 19:
       Slot 1: QUADRAM CO LOACH AV NORCROSS GE 
       Slot 2: MICROSTUF, H.W. PKWY ROSWELL GE 
       Slot 3: NCR COORPO BOWLING DR DAYTON OH 
       Slot 4: EMERSON CO STAN ST SANTA ANA CA 
       Slot 5: AMDEK COR. MAINE GROVE VALLY IL 
+      Count: 5
 Bucket 20:
       Slot 1: VEN-TAL IN WALSH SANTA CLARA CA 
       Slot 2: VICTOR COR SCOTTS VALLEY, CALIF 
       Slot 3: INTEL COOR 5 ST MOUNTAINVIEW CA 
       Slot 4: CHANNELS I KI ST TORONTO CANADA 
+      Count: 4
                    Hash Table 
               Verification Report 
-            Before|After Restoration 
+                After Restoration 
 Bucket 1:
       Slot 1: GENOA SYST TRIMBLE SAN JOSE, CA 
+      Count: 1
 Bucket 2:
       Slot 1: TATUNG CO. EL PR. LONG BEACH CA 
       Slot 2: CORE INTER FEDERA BOCA RATON FL 
       Slot 3: CURITS INC UNIO PETERBOROUGH NH 
+      Count: 3
 Bucket 3:
       Slot 1: SIGMA DESI UNIVER A SAN JOSE CA 
       Slot 2: TAXAN CORP CITY OF INDUSTRY, CA 
       Slot 3: ORCHID COR WESTINGHO FREMONT CA 
       Slot 4: MICROWAY C TEMPOHOUSE LONDON UK 
+      Count: 4
 Bucket 4:
       Slot 1: MICRODESIG UNVIE WINTER PARK FL 
       Slot 2: PARADISE S TAYLOR S BRISBANE CA 
@@ -99,65 +121,81 @@ Bucket 4:
       Slot 4: TALLTREE S SNTONIO PALO ALTO CA 
       Slot 5: PROMETHEUS FREMONT S FREMONT CA 
       Slot 6: FUNK SOFTW 3RD ST CAMBRIDGE, MA 
+      Count: 6
 Bucket 5:
       Slot 1: AST RESEAR ALTON AV IRVINE   CA 
       Slot 2: DAC SW INC SPRING VAL DALLAS TX 
       Slot 3: COMPUADD C TECH BLVD. AUSTIN TX 
+      Count: 3
 Bucket 6:
       Slot 1: MAYNARD EL SEMOR CASSELBERRY FL 
+      Count: 1
 Bucket 7:
       Slot 1: SUMMIT TEC BABSON WELLESLEY, MA 
       Slot 2: MICROGRAFX GREEN RICHARDSON, TX 
       Slot 3: BUSSIN TOL 128 AVE BELLEVUE, WA 
       Slot 4: DYSAN CORP PAT H SANTA CLARA CA 
+      Count: 4
 Bucket 8:
       Slot 1: ROSESOFT C UNIVE WAY SEATTLE WA 
       Slot 2: OKIDATA CO A MOUNTAIN LAUREL NJ 
+      Count: 2
 Bucket 9:
       Slot 1: TECMAR INT COCHRAN RD. SOLON OH 
       Slot 2: QUANTUM SW STAFFO OTTAWA CANADA 
+      Count: 2
 Bucket 10:
       Slot 1: PRINCETON. EWING S PRINCETON NJ 
       Slot 2: HEWLETT PA BERNARD SAN DIEGO CA 
       Slot 3: SPECTRUM S WOLFE R SUNNYVALE CA 
+      Count: 3
 Bucket 11:
       Slot 1: MAXELL CO. OXFORD  MOONACHIE NJ 
       Slot 2: SOURCE TEL POBOX 1305 MCLEAN VA 
       Slot 3: QUBIE CORP CALLE S CAMARILLO CA 
+      Count: 3
 Bucket 12:
       Slot 1: KAMERMAN L CIRRUS BEAVERTON, OR 
       Slot 2: EPSON AMER BEDA STR TORRANCE CA 
       Slot 3: DIGITAL RE GARDEN C MONTEREY CA 
+      Count: 3
 Bucket 13:
       Slot 1: HERCULES C NINTH ST BERKELEY CA 
       Slot 2: MICROMART. CAMPUS D NORCROSS GE 
       Slot 3: BORTHER I. THENALA DR IRVINE CA 
+      Count: 3
 Bucket 14:
       Slot 1: EXPRESS SY REMING SCHAUMBURG IL 
       Slot 2: IOMEGA COR WESTA SOUTH ROY UTAH 
       Slot 3: BORLAND I. SCOTTS V. DR S.V. CA 
+      Count: 3
 Bucket 16:
       Slot 1: GRAPHIC CO 5TH AVE. WALTHAM, MA 
       Slot 2: MICROPRO I BOX 57135 HAYWARD CA 
       Slot 3: PROSOFT CO BELLAI HOLLEYWOOD CA 
       Slot 4: HONEYWELL. BAKER COSTA MESA, CA 
+      Count: 4
 Bucket 17:
       Slot 1: SSISOFTWAR CENTER ST. OREM UTAH 
       Slot 2: EVEREX SYS MILMONT FREMONT,  CA 
+      Count: 2
 Bucket 18:
       Slot 1: LOGIQUEST. MONTRE QUEBEC CANADA 
       Slot 2: IBM CORPOR BOCA RATON,  FLORIDA 
+      Count: 2
 Bucket 19:
       Slot 1: QUADRAM CO LOACH AV NORCROSS GE 
       Slot 2: MICROSTUF, H.W. PKWY ROSWELL GE 
       Slot 3: NCR COORPO BOWLING DR DAYTON OH 
       Slot 4: EMERSON CO STAN ST SANTA ANA CA 
       Slot 5: AMDEK COR. MAINE GROVE VALLY IL 
+      Count: 5
 Bucket 20:
       Slot 1: VEN-TAL IN WALSH SANTA CLARA CA 
       Slot 2: VICTOR COR SCOTTS VALLEY, CALIF 
       Slot 3: INTEL COOR 5 ST MOUNTAINVIEW CA 
       Slot 4: CHANNELS I KI ST TORONTO CANADA 
+      Count: 4
 
 Search Key     Bucket/Slot                    Record
 ==================================================
@@ -186,3 +224,23 @@ Stats
 =======================
 Total collisions: 39
 Average collisions: 2.29
+Collision length per bucket:
+  Bucket 1: 0
+  Bucket 2: 2
+  Bucket 3: 3
+  Bucket 4: 5
+  Bucket 5: 2
+  Bucket 6: 0
+  Bucket 7: 3
+  Bucket 8: 1
+  Bucket 9: 1
+  Bucket 10: 2
+  Bucket 11: 2
+  Bucket 12: 2
+  Bucket 13: 2
+  Bucket 14: 2
+  Bucket 16: 3
+  Bucket 17: 1
+  Bucket 18: 1
+  Bucket 19: 4
+  Bucket 20: 3

@@ -1,8 +1,8 @@
 class LinkedList
 	#Shows the beginins and end node of the linked list
-	attr_accessor :head,:tail, :count
-	#Structure to define a slot data type
-	Slot = Struct.new(:key, :value,:next)
+	attr_reader :head,:tail, :count
+	#Structure to define a Bucket data type
+	Bucket = Struct.new(:key, :value,:next)
 	#Initialize an empty Linked list
 	def initialize
 		@head = nil
@@ -25,7 +25,7 @@ class LinkedList
 	end
 	#Adds a bucket or adds to a current bucket in the list
 	def append(key,value)
-		tmp = Slot.new(key,value,nil)
+		tmp = Bucket.new(key,value,nil)
 		if @head.nil?
 			@head = tmp
 			@tail = tmp

@@ -1,38 +1,47 @@
 Class Diagram
 
-Struct Slot
-	(+)String key, value
-	(+)Slot next
+Struct Bucket
+	(-)key, value
+	(+)Bucket next
 class LinkedList
-	(+) Slot head, tail, int count
-	initialize
-	purge
-	empty?
-	first
-	append(key,value)
-	each
+	(-) Bucket head, tail, int count
+	//Ruby generates getters with "attr_reader :head, :tail:, :count"
+	//however data is still private 
+	(+) Bucket head()
+	(+) Bucket tail()
+	(+) int count()
+	(+)initialize()
+	(+)void purge()
+	(+)boolean empty?()
+	(+)Bucket first()
+	(+)void append(key,value)
+	(+)each(&block) //This is Ruby convention for iterator service. 
+					//You must pass a Ruby code block to method to 
+					//process the data of each bucket in the list
 class HashTable
-	table[]
-	initialize(size)
-	<abstract> hash_function
-	insert(key,value)
-	search(key)
-	each
+	(-)LinkedList table[]
+	(+)LinkedList table() // getter method for array created by "attr_reader :table"
+	(+)void initialize(size)
+	(+)<abstract> void hash_function(key)
+	(+)void insert(key,value)
+	(+)String search(key)
+	(+)each(&block)  //Takes code block to proccess each entry in table
+
 class MyHash < HashTable
-	initialize(size)
-	read_data(filename)
-	search_for_file
-	write_data
-	hash_function(key)
-	stats
-	print_table
-	(-)print_report_header
-	(-)print_search_header
-	(-)print_search
+	(+)void initialize(size)
+	(+)void read_data(filename)
+	(+)void search_for_file
+	(+)void write_data()
+	(+)void hash_function(key)
+	(+)void stats()
+	(+)void print_table(state)
+	(-)print_report_header(state)
+	(-)print_search_header()
+	(-)print_search()
 
 Class Associations
 
-LinkedList -------1:n(contains) ----- Slots
+LinkedList -------1:n(contains) ----- Bucket
 HashTable -----1:n(contains) ------ LinkedList
 MyHash <------- 1:1(inherits) ------ HashTable
 

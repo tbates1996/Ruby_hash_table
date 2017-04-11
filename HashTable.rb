@@ -26,13 +26,13 @@ class HashTable
 		if @table[index] == nil
 			return -1
 		else
-			slot_num = 1	
-			@table[index].each do |slot|
+			bucket_num = 1	
+			@table[index].each do |bucket|
 					
-				if slot[:key] == key
-					return {:location => "#{index + 1}/#{slot_num}", :data => slot[:value]}
+				if bucket[:key] == key
+					return {:location => "#{index + 1}/#{bucket_num}", :data => bucket[:value]}
 				end
-				slot_num += 1 
+				bucket_num += 1 
 			end
 			return -1
 		end
